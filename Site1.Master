@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="EvidenceAsp.netdemo.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <title></title>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div class="container">
+<div class="row">
+<div class="col-sm-2">
+<img src="/images/images.png" class="img-responsive thumbnail" />
+</div>
+<div class="col-sm-7 text-center">
+<h1>IDB-BISEW</h1>
+</div>
+<div class="col-sm-3">
+    <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut" />
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12 text-center">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Evidenc Round47-Ditc</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="DashBoard.aspx">Student Info</a></li>
+      <li><a href="/webForm4.aspx">Result Deatils</a></li>
+      <li><a href="/dWebForm6.aspx">Fees Details</a></li>
+        <li><a href="/Crystal.aspx">Student details</a></li>
+        <li><a href="/TotalResultmark.aspx">Crystal Report Mark</a></li>
+     <li><a href="/Object/Objectwebpage.aspx">Canteen Food Details</a></li>
+
+    </ul>
+  </div>
+</nav>
+</div>
+
+</div>
+<div class="row">
+<div class="col-sm-2">
+Left Menu
+   
+</div>
+<div class="col-sm-8">
+<div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div class="col-sm-2">
+Advertisements
+</div>
+</div>
+</div>
+
+    </form>
+</body>
+</html>
